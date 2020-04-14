@@ -1,15 +1,23 @@
 import Head from "next/head";
-
+import EurovisionLogo from "../components/EurovisionLogo";
 const Home = () => (
   <div className="container">
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+        rel="stylesheet"
+      ></link>
       <link rel="stylesheet" href="https://use.typekit.net/rdi3nga.css"></link>
     </Head>
 
     <main>
-      <h1 className="title">Eurovision 2020</h1>
+      <div className="container">
+        <span className="names">Alisa and Joe's</span>
+        <EurovisionLogo width="80vw" />
+        <p>Come back here at 7pm on April 18th for links and instructions!</p>
+      </div>
     </main>
 
     <style jsx>{`
@@ -21,38 +29,21 @@ const Home = () => (
         justify-content: center;
         align-items: center;
       }
+      svg {
+        width: 100%;
+        height: auto;
+      }
+
+      .names {
+        font-family: Pacifico;
+      }
 
       main {
-        padding: 5rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
       }
 
       .title a {
@@ -146,6 +137,15 @@ const Home = () => (
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        color: white;
+        background: rgb(78, 16, 255);
+        background: linear-gradient(
+          45deg,
+          rgba(78, 16, 255, 1) 0%,
+          rgba(37, 73, 255, 1) 100%
+        );
+        font-size: 32px;
+        font-family: sofia-pro, sans-serif;
       }
 
       * {
