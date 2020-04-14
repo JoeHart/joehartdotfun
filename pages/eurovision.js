@@ -41,7 +41,10 @@ const Home = () => (
         <span className="names">Alisa and Joe's</span>
         <EurovisionLogo width="80vw" />
         <p>Watch live at 7pm on Saturday the 18th of April.</p>
-        <p>Come back here nearer the time for links and instructions.</p>
+        <p>
+          Come back at 6:30pm on the day for links and instructions on how to
+          watch and vote!
+        </p>
       </div>
     </main>
 
