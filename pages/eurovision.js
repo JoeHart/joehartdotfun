@@ -16,7 +16,7 @@ const Home = () => (
       <div className="container">
         <span className="names">Alisa and Joe's</span>
         <EurovisionLogo width="80vw" />
-        <p>Watch live at 7pm on April 18th.</p>
+        <p>Watch live at 7pm on Saturday the 18th of April.</p>
         <p>Come back here nearer the time for links and instructions.</p>
       </div>
     </main>
