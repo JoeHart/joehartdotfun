@@ -73,7 +73,8 @@ const Home = () => (
 
         font-family: sofia-pro, sans-serif;
 
-        font-weight: 700;
+        font-weight: 900;
+        text-transform: uppercase;
 
         font-style: normal;
       }
