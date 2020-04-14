@@ -10,12 +10,12 @@ const Home = () => (
         content="7pm Saturday 18th of April Eurovision 2020 live streamed, you decide who wins!"
       />
       <meta property="og:type" content="website" />
-      <meta property="og:image:width" content="2142" />
-      <meta property="og:image:height" content="994" />
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="300" />
       <meta
         property="og:image"
         itemprop="image"
-        content="http://joehart.fun/Splash.png"
+        content="http://joehart.fun/smallsplash.jpg"
       />
       <meta
         property="og:image:secure_url"
