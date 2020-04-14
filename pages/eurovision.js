@@ -144,8 +144,21 @@ const Home = () => (
           rgba(78, 16, 255, 1) 0%,
           rgba(37, 73, 255, 1) 100%
         );
-        font-size: 32px;
         font-family: sofia-pro, sans-serif;
+      }
+
+      html {
+        font-size: 32px;
+      }
+      @media screen and (min-width: 320px) {
+        html {
+          font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        html {
+          font-size: 32px;
+        }
       }
 
       * {
