@@ -12,7 +12,7 @@ const Home = () => (
       <meta
         property="og:image"
         itemprop="image"
-        content="http://joehart.fun/Splash.png"
+        content="https://joehart.fun/Splash.png"
       />
 
       <meta
