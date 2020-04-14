@@ -5,6 +5,7 @@ const Home = () => (
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="https://use.typekit.net/rdi3nga.css"></link>
     </Head>
 
     <main>

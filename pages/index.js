@@ -5,6 +5,7 @@ const Home = () => (
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="https://use.typekit.net/rdi3nga.css"></link>
     </Head>
 
     <main>
@@ -69,6 +70,12 @@ const Home = () => (
         margin: 0;
         line-height: 1.15;
         font-size: 4rem;
+
+        font-family: sofia-pro, sans-serif;
+
+        font-weight: 700;
+
+        font-style: normal;
       }
 
       .title,
@@ -143,8 +150,7 @@ const Home = () => (
       body {
         padding: 0;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: sofia-pro, sans-serif;
       }
 
       * {
