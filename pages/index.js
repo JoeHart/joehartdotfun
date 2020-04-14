@@ -8,18 +8,8 @@ const Home = () => (
     </Head>
 
     <main>
-      <h1 className="title">Joehart.fun</h1>
+      <h1 className="title">JoeHart.fun</h1>
     </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
 
     <style jsx>{`
       .container {
