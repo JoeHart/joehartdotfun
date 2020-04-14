@@ -69,7 +69,7 @@ const Home = () => (
       .title {
         margin: 0;
         line-height: 1.15;
-        font-size: 4rem;
+        font-size: 8rem;
 
         font-family: sofia-pro, sans-serif;
 
