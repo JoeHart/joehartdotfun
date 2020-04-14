@@ -9,7 +9,11 @@ const Home = () => (
         property="og:description"
         content="7pm Saturday 18th of April Eurovision 2020 live streamed, you decide who wins!"
       />
-      <meta property="og:image" content="http://joehart.fun/Splash.png" />
+      <meta
+        property="og:image"
+        itemprop="image"
+        content="http://joehart.fun/Splash.png"
+      />
 
       <meta
         name="description"
