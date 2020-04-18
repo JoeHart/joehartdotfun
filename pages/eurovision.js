@@ -42,13 +42,13 @@ const Home = () => (
           <p className="names">Alisa and Joe's</p>
           <EurovisionLogo width="15vh" />
         </div>
-        {/* <div>
+        <div>
           <iframe
-            width="420"
-            height="315"
-            src="https://www.youtube.com/watch?v=Cdvi96SiHhw"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/watch?v=8dtNRhr0Bro"
           ></iframe>
-        </div> */}
+        </div>
         <p>Show starts at 7pm sharp!</p>
         <a
           className="button"
@@ -105,7 +105,7 @@ const Home = () => (
       }
 
       .button {
-        background: rgb(20, 90, 200);
+        background: rgb(20, 200, 90);
         border: none;
         border-radius: 0.5em;
         font-size: 1em;
@@ -114,19 +114,19 @@ const Home = () => (
         font-weight: 400;
         text-transform: uppercase;
         font-family: "Varela Round", sans-serif;
-        box-shadow: 0 0.4em 0px 0px rgb(10, 70, 160);
+        box-shadow: 0 0.4em 0px 0px rgb(10, 160, 70);
         cursor: pointer;
       }
 
       .button:hover {
         transform: translateY(0.05em);
-        background-color: rgb(25, 95, 205);
-        box-shadow: 0 0.35em 0px 0px rgb(10, 70, 160);
+        background-color: rgb(25, 205, 95);
+        box-shadow: 0 0.35em 0px 0px rgb(10, 160, 70);
       }
 
       .button:active {
         transform: translateY(0.25em);
-        box-shadow: 0 0.15em 0px 0px rgb(10, 70, 160);
+        box-shadow: 0 0.15em 0px 0px rgb(10, 160, 70);
       }
 
       main {
@@ -241,8 +241,8 @@ const Home = () => (
         background: rgb(78, 16, 255);
         background: linear-gradient(
           45deg,
-          rgba(78, 16, 255, 1) 0%,
-          rgba(37, 73, 255, 1) 100%
+          rgba(48, 33, 125, 1) 0%,
+          rgba(21, 111, 213, 1) 100%
         );
         font-family: sofia-pro, sans-serif;
       }
