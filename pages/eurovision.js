@@ -43,11 +43,13 @@ const Home = () => (
           <EurovisionLogo width="15vh" />
         </div>
         <div>
-          <iframe
-            width="640"
-            height="360"
-            src="https://www.youtube.com/watch?v=8dtNRhr0Bro"
-          ></iframe>
+          <a
+            className="button"
+            href="https://www.youtube.com/watch?v=8dtNRhr0Bro"
+            target="_blank"
+          >
+            Click Here To Watch
+          </a>
         </div>
         <p>Show starts at 7pm sharp!</p>
         <a
