@@ -42,13 +42,13 @@ const Home = () => (
           <p className="names">Alisa and Joe's</p>
           <EurovisionLogo width="15vh" />
         </div>
-        <div>
+        {/* <div>
           <iframe
             width="420"
             height="315"
-            src="https://youtu.be/Cdvi96SiHhw"
+            src="https://www.youtube.com/watch?v=Cdvi96SiHhw"
           ></iframe>
-        </div>
+        </div> */}
         <p>Show starts at 7pm sharp!</p>
         <a
           className="button"
