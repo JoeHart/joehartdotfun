@@ -38,13 +38,41 @@ const Home = () => (
 
     <main>
       <div className="container">
-        <span className="names">Alisa and Joe's</span>
-        <EurovisionLogo width="80vw" />
-        <p>Watch live at 7pm on Saturday the 18th of April.</p>
-        <p>
-          Come back at 6:30pm on the day for links and instructions on how to
-          watch and vote!
-        </p>
+        <div className="header">
+          <p className="names">Alisa and Joe's</p>
+          <EurovisionLogo width="15vh" />
+        </div>
+        <div>
+          <iframe
+            width="420"
+            height="315"
+            src="https://youtu.be/Cdvi96SiHhw"
+          ></iframe>
+        </div>
+        <p>Show starts at 7pm sharp!</p>
+        <a
+          className="button"
+          href="https://forms.gle/fjaEdNd1WxvHf3P96"
+          target="_blank"
+        >
+          Vote Here
+        </a>
+        <div className="footer">
+          <div>
+            Hey, normally you'd spend £1 or £2 ringing up and voting for
+            eurovision, if you feel like it why not donate the same amount to
+            NHS Charities here?{" "}
+          </div>
+          <div>
+            <a
+              className="button"
+              href="https://uk.virginmoneygiving.com/JoeHart5"
+              target="_blank"
+            >
+              Donate
+            </a>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -65,6 +93,40 @@ const Home = () => (
 
       .names {
         font-family: Pacifico;
+        margin: 0;
+      }
+
+      .header {
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        margin: 16px;
+      }
+
+      .button {
+        background: rgb(20, 90, 200);
+        border: none;
+        border-radius: 0.5em;
+        font-size: 1em;
+        color: white;
+        padding: 0.75em;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: "Varela Round", sans-serif;
+        box-shadow: 0 0.4em 0px 0px rgb(10, 70, 160);
+        cursor: pointer;
+      }
+
+      .button:hover {
+        transform: translateY(0.05em);
+        background-color: rgb(25, 95, 205);
+        box-shadow: 0 0.35em 0px 0px rgb(10, 70, 160);
+      }
+
+      .button:active {
+        transform: translateY(0.25em);
+        box-shadow: 0 0.15em 0px 0px rgb(10, 70, 160);
       }
 
       main {
@@ -73,6 +135,15 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+
+      .footer {
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        padding: 16px;
+        max-width: 800px;
+        display: flex;
       }
 
       .title a {
