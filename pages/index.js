@@ -43,7 +43,7 @@ const Home = () => (
           <Card
             title="Katamari Node Modules"
             image={Katamari}
-            playLink="https://www.joehart.co.uk"
+            link="/play/katamari/index.html"
           >
             <p>
               Fulfill your destiny as a node_modules folder and grow as big as
