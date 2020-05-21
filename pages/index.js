@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import Card from "../components/Card";
 import Katamari from "../assets/Katamari.png";
+import SMS from "../assets/supermarketsolid.png";
 const GlobalStyle = createGlobalStyle`
   html, 
     body {
@@ -40,6 +41,16 @@ const Home = () => (
       <PageContainer>
         <h1>joehartdotfun</h1>
         <CardContainer>
+          <Card
+            title="Super Market Solid"
+            image={SMS}
+            link="/play/supermarketsolid/index.html"
+          >
+            <p>
+              It's time to go to the shops, can you get the items, get to the
+              checkout and maintain social distancing?
+            </p>
+          </Card>
           <Card
             title="Katamari Node Modules"
             image={Katamari}

@@ -17,6 +17,8 @@ const ButtonLink = styled.a`
   width: 100%;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 0;
+  margin-top: auto;
   &:hover {
     background: rgb(0, 100, 200);
   }
