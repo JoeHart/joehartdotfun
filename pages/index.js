@@ -3,7 +3,10 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import Card from "../components/Card";
 import Katamari from "../assets/Katamari.png";
+import Me from "../assets/me.jpg";
+import TwitterLogo from "../assets/twitter.png";
 import SMS from "../assets/supermarketsolid.png";
+import Item from "../components/Item";
 const GlobalStyle = createGlobalStyle`
   html, 
     body {
@@ -20,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
 const PageContainer = styled.div`
   max-width: 980px;
   margin: 0 auto;
+  padding: 0 1em;
 `;
 
 const CardContainer = styled.div`
@@ -28,7 +32,15 @@ const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
 `;
 
-const Title = styled.div``;
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const TwitterLink = styled.img`
+  width: 2em;
+`;
 const Home = () => (
   <div className="container">
     <Head>
@@ -39,7 +51,18 @@ const Home = () => (
 
     <main>
       <PageContainer>
-        <h1>joehartdotfun</h1>
+        <Header>
+          <h1>joehartdotfun</h1>
+          <a href="https://twitter.com/joehart">
+            <TwitterLink src={TwitterLogo} alt="Twitter Profile" />
+          </a>
+        </Header>
+        <Item
+          avatar={Me}
+          name="Joe Hart"
+          description="Comedian & Coder"
+          link="https://www.joehart.co.uk"
+        />
         <CardContainer>
           <Card
             title="Super Market Solid"
