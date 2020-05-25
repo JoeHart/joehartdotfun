@@ -6,6 +6,7 @@ import Katamari from "../assets/Katamari.png";
 import Me from "../assets/me.jpg";
 import TwitterLogo from "../assets/twitter.png";
 import SMS from "../assets/supermarketsolid.png";
+import DurhamDrive from "../assets/DurhamDrive.png";
 import Item from "../components/Item";
 const GlobalStyle = createGlobalStyle`
   html, 
@@ -64,6 +65,16 @@ const Home = () => (
           link="https://www.joehart.co.uk"
         />
         <CardContainer>
+          <Card
+            title="Durham Drive"
+            image={DurhamDrive}
+            link="/play/durhamdrive/index.html"
+          >
+            <p>
+              It's COVID19, so for some reason we're going to durham. Dodge the
+              police and get to the castle.
+            </p>
+          </Card>
           <Card
             title="Super Market Solid"
             image={SMS}
