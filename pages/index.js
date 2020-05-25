@@ -6,7 +6,7 @@ import Katamari from "../assets/Katamari.png";
 import Me from "../assets/me.jpg";
 import TwitterLogo from "../assets/twitter.png";
 import SMS from "../assets/supermarketsolid.png";
-import DurhamDrive from "../assets/DurhamDriveSquare.png";
+import DurhamDrive from "../assets/DurhamDrivesquare.png";
 import Item from "../components/Item";
 const GlobalStyle = createGlobalStyle`
   html, 
