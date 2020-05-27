@@ -16,12 +16,21 @@ const Button = styled.button`
   border: 1px solid rgb(0, 113, 227);
   margin-bottom: 0;
   margin-top: auto;
+  width: 100%;
+  @media (min-width: 35rem) {
+    max-width: 6em;
+  }
   &:hover {
     background: rgb(0, 100, 200);
   }
 `;
 const Container = styled.div`
   grid-column: 1 / 4;
+  text-align: center;
+  @media (max-width: 35rem) {
+    grid-column: 1;
+    grid-row: 2;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,10 +39,30 @@ const Container = styled.div`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: row;
-  & > * + * {
-    margin-left: 0.5em;
+  @media (max-width: 35rem) {
+    flex-direction: column;
+    & > * + * {
+      margin-top: 0.5em;
+    }
   }
+  @media (min-width: 35rem) {
+    & > * + * {
+      margin-left: 0.5em;
+    }
+  }
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 3em;
+`;
+
+const InputContainer = styled.div`
+  width: 100%;
+  @media (min-width: 35rem) {
+    max-width: 20em;
+  }
+
+  flex-grow: 1;
 `;
 
 const submitForm = async (email) => {
@@ -44,8 +73,6 @@ const submitForm = async (email) => {
       b_48db0395ef9f244b4dda52e1e_3945ea8f6f: "",
     }), // body data type must match "Content-Type" header
   });
-
-  console.log(result);
 };
 
 export default function EmailSignUp() {
@@ -53,14 +80,15 @@ export default function EmailSignUp() {
     <Container>
       <h3>Sign up for an email when I release a new game.</h3>
       <StyledForm action={url} method="post" target="_blank">
-        <Input
-          id="email"
-          name="EMAIL"
-          type="email"
-          width="20em"
-          placeholder="Email"
-          required
-        />
+        <InputContainer>
+          <Input
+            id="email"
+            name="EMAIL"
+            type="email"
+            placeholder="Email"
+            required
+          />
+        </InputContainer>
         <Button type="submit">Submit</Button>
       </StyledForm>
     </Container>

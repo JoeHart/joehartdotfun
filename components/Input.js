@@ -6,6 +6,7 @@ const StyledInput = styled.input`
   font-size: 1em;
   border-radius: 0.5em;
   border: 1px solid rgb(0, 113, 227);
+  width: 100%;
   ${(props) => props.width && `width: ${props.width};`}
 `;
 

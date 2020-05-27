@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import Card from "../components/Card";
 import Katamari from "../assets/Katamari.png";
-import Me from "../assets/me.jpg";
 import TwitterLogo from "../assets/twitter.png";
 import SMS from "../assets/supermarketsolid.png";
 import DurhamDrive from "../assets/DurhamDrivesquare.png";
@@ -31,7 +30,12 @@ const PageContainer = styled.div`
 const CardContainer = styled.div`
   display: grid;
   grid-gap: 1em;
+
   grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 35rem) {
+    grid-template-columns: 1fr;
+  }
+}
 `;
 
 const Header = styled.div`

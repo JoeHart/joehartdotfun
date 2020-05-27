@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: 0;
 `;
 
 const ButtonLink = styled.a`
