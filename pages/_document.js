@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from "next/document";
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from "styled-components";
-
+import Me from "../assets/me.jpg";
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     // Step 1: Create an instance of ServerStyleSheet
@@ -22,7 +22,23 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head>{this.props.styleTags}</Head>
+        <Head>
+          {this.props.styleTags}
+
+          <meta property="og:title" content="joehartdotfun - Silly Games" />
+          <meta
+            property="og:description"
+            content="Funny, silly or satirical comedy games made by comedian and coder Joe Hart"
+          />
+          <meta property="og:image" content={Me} />
+          <meta property="og:url" content="http://joehart.fun" />
+          <meta name="twitter:card" content="summary_large_image" />
+
+          <meta property="og:site_name" content="joehartdotfun" />
+
+          <meta name="twitter:site" content="@joehart" />
+          <meta name="twitter:creator" content="@joehart" />
+        </Head>
         <body>
           <Main />
           <NextScript />
