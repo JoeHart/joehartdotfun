@@ -32,13 +32,19 @@ const Title = styled.h3`
   margin-bottom: 0;
 `;
 
-export default function Card({ title, link, image, children }) {
+export default function Card({
+  title,
+  link,
+  image,
+  children,
+  buttonText = "Play",
+}) {
   return (
     <Container>
       <Image src={image} />
       <Title>{title}</Title>
       <div>{children}</div>
-      <ButtonLink href={link}>Play</ButtonLink>
+      <ButtonLink href={link}>{buttonText}</ButtonLink>
     </Container>
   );
 }

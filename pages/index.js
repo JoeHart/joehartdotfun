@@ -7,7 +7,8 @@ import Me from "../assets/me.jpg";
 import TwitterLogo from "../assets/twitter.png";
 import SMS from "../assets/supermarketsolid.png";
 import DurhamDrive from "../assets/DurhamDrivesquare.png";
-import Item from "../components/Item";
+import Footer from "../components/Footer";
+import EmailSignUp from "../components/EmailSignUp";
 const GlobalStyle = createGlobalStyle`
   html, 
     body {
@@ -42,6 +43,7 @@ const Header = styled.div`
 const TwitterLink = styled.img`
   width: 2em;
 `;
+
 const Home = () => (
   <div className="container">
     <Head>
@@ -58,17 +60,13 @@ const Home = () => (
             <TwitterLink src={TwitterLogo} alt="Twitter Profile" />
           </a>
         </Header>
-        <Item
-          avatar={Me}
-          name="Joe Hart"
-          description="Comedian & Coder"
-          link="https://www.joehart.co.uk"
-        />
+
         <CardContainer>
           <Card
             title="Durham Drive"
             image={DurhamDrive}
-            link="/play/durhamdrive/index.html"
+            buttonText="Play On Itch.io"
+            link="https://joehartfun.itch.io/durham-drive"
           >
             <p>
               It's COVID19, so for some reason we're going to durham. Dodge the
@@ -95,9 +93,11 @@ const Home = () => (
               you can.
             </p>
           </Card>
+          <EmailSignUp />
         </CardContainer>
       </PageContainer>
     </main>
+    <Footer />
   </div>
 );
 
