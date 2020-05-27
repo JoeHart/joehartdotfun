@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Funny, silly or satirical comedy games made by comedian and coder Joe Hart"
           />
-          <meta property="og:image" content={Me} />
+          <meta property="og:image" content="http://joehart.fun/me.jpg" />
           <meta property="og:url" content="http://joehart.fun" />
           <meta name="twitter:card" content="summary_large_image" />
 
