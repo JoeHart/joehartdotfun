@@ -27,13 +27,18 @@ const ButtonLink = styled.a`
 
 const Image = styled.img`
   width: 100%;
+`;
+const ImageWrapper = styled.div`
+  width: 100%;
+  position: relative;
   &:before {
+    position: absolute;
     content: "";
     display: block;
+    width: 100%;
     padding-top: 100%; /*What you want the height to be in relation to the width*/
   }
 `;
-
 const Title = styled.h3`
   margin-bottom: 0;
 `;
@@ -47,7 +52,9 @@ export default function Card({
 }) {
   return (
     <Container>
-      <Image src={image} alt="" />
+      <ImageWrapper>
+        <Image src={image} alt="" />
+      </ImageWrapper>
       <Title>{title}</Title>
       <div>{children}</div>
       <ButtonLink href={link}>{buttonText}</ButtonLink>
