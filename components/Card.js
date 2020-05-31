@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import AspectRatio from "react-aspect-ratio";
 
 const Container = styled.div`
   display: flex;
