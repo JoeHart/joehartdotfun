@@ -26,10 +26,10 @@ const Body = styled.div`
 `;
 
 const Link = styled.a`
-  color: rgb(0, 113, 227);
+  color: #5cadff;
   text-decoration: none;
   &:visited {
-    color: rgb(0, 113, 227);
+    color: #5cadff;
     text-decoration: none;
   }
   &:hover {

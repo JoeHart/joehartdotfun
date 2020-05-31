@@ -40,7 +40,7 @@ const SocialList = styled.ul`
   }
   a,
   a:visited {
-    color: rgb(0, 113, 227);
+    color: #5cadff;
     text-decoration: none;
   }
   a:hover {
