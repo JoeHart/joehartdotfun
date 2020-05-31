@@ -1,6 +1,11 @@
 import Document, { Head, Main, NextScript } from "next/document";
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from "styled-components";
+import {
+  Cookies,
+  CookiesProvider,
+  CookieBannerUniversal,
+} from "react-cookie-banner";
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -18,7 +23,6 @@ export default class MyDocument extends Document {
     // Step 4: Pass styleTags as a prop
     return { ...page, styleTags };
   }
-
   render() {
     return (
       <html lang="en">
@@ -46,6 +50,18 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            type="text/javascript"
+            id="cookiebanner"
+            data-position="top"
+            data-bg="rgba(0,0,0,0.8)"
+            data-accept-on-scroll="true"
+            data-close-text="Dismiss"
+            data-debug="true"
+            data-moreinfo="/cookieinfo"
+            data-message="I use cookies to see which games are played most to try and make them better. I assume you're cool with that if you're hanging about."
+            src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
+          ></script>
         </body>
       </html>
     );

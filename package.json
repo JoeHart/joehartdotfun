@@ -15,6 +15,7 @@
     "next-ga": "^2.3.4",
     "next-images": "^1.4.0",
     "react": "16.13.1",
+    "react-cookie-banner": "^4.1.0",
     "react-dom": "16.13.1",
     "styled-components": "^5.1.0"
   },
