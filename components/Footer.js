@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Item from "../components/Item";
 import Me from "../assets/compressed/me-tiny.jpg";
-
+import Link from "next/link";
 const Container = styled.footer`
   min-height: 15em;
 
@@ -29,7 +29,7 @@ const Columns = styled.div`
   }
 `;
 
-const SocialList = styled.ul`
+const LinkList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
           <div>
             <h3>Links</h3>
-            <SocialList>
+            <LinkList>
               <li>
                 <a href="https://twitter.com/joehart">Twitter</a>
               </li>
@@ -94,9 +94,18 @@ export default function Footer() {
                   Youtube
                 </a>
               </li>
-            </SocialList>
+            </LinkList>
           </div>
-          <div></div>
+          <div>
+            <h3>Important Stuff</h3>
+            <LinkList>
+              <li>
+                <Link href="/cookieinfo">
+                  <a>Cookie Stuff</a>
+                </Link>
+              </li>
+            </LinkList>
+          </div>
         </Columns>
       </InnerContainer>
     </Container>
