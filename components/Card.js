@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import AspectRatio from "react-aspect-ratio";
 
 const Container = styled.div`
   display: flex;
@@ -42,7 +43,9 @@ export default function Card({
 }) {
   return (
     <Container>
-      <Image src={image} alt="" />
+      <AspectRatio ratio="1">
+        <Image src={image} alt="" />
+      </AspectRatio>
       <Title>{title}</Title>
       <div>{children}</div>
       <ButtonLink href={link}>{buttonText}</ButtonLink>
