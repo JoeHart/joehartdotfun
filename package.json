@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "compress-assets": "imagemin ./assets/* --out-dir ./assets/compressed"
   },
   "dependencies": {
-    "@input-output-hk/mailchimp-subscribe": "^0.3.0",
     "@svgr/webpack": "^5.3.1",
     "formik": "^2.1.4",
     "next": "9.3.4",
@@ -16,11 +16,10 @@
     "next-images": "^1.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-use-mailchimp": "^0.4.0",
-    "styled-components": "^5.1.0",
-    "swr": "^0.2.2"
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.7"
+    "babel-plugin-styled-components": "^1.10.7",
+    "imagemin-cli": "^6.0.0"
   }
 }

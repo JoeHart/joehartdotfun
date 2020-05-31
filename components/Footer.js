@@ -1,32 +1,59 @@
 import React from "react";
 import styled from "styled-components";
 import Item from "../components/Item";
-import Me from "../assets/me.jpg";
+import Me from "../assets/compressed/me.jpg";
 
 const Container = styled.footer`
   min-height: 15em;
-  background-color: #333;
-  color: #eee;
+
+  margin-top: auto;
+  margin-bottom: 0;
 `;
 
 const InnerContainer = styled.div`
-  max-width: 980px;
+  background-color: #222;
+  color: #eee;
   margin: 0 auto;
-  padding: 1em;
+  margin-top: 3em;
+  padding: 2rem;
 `;
 
 const Columns = styled.div`
+  max-width: 980px;
+  margin: 0 auto;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 35rem) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const SocialList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 1rem;
+  & > li + li {
+    margin-top: 0.5em;
+  }
+  a,
+  a:visited {
+    color: rgb(0, 113, 227);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 `;
 export default function Footer() {
   return (
     <Container>
       <InnerContainer>
-        <h3>joehartdotfun</h3>
         <Columns>
           <div>
+            <h3>About Me</h3>
             <Item
               avatar={Me}
               name="Joe Hart"
@@ -34,8 +61,35 @@ export default function Footer() {
               link="https://www.joehart.co.uk"
             />
             <p>Hey there 👋 I'm Joe this is where I put silly game's I make.</p>
+            <p>
+              If you like them follow me on socials to hear about new ones, or
+              sign up to my mailing list.
+            </p>
           </div>
-          <div></div>
+          <div>
+            <h3>Links</h3>
+            <SocialList>
+              <li>
+                <a href="https://twitter.com/joehart">Twitter</a>
+              </li>
+              <li>
+                <a href="https://joehart.dev">Blog</a>
+              </li>
+              <li>
+                <a href="https://joehartfun.itch.io/">Itch.io</a>
+              </li>
+              <li>
+                <a href="https://www.buymeacoffee.com/8Prw3qhYE">
+                  Buy My A Coffee
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC7Q5oFp0U3eWWXMq7x1iAEQ">
+                  Youtube
+                </a>
+              </li>
+            </SocialList>
+          </div>
           <div></div>
         </Columns>
       </InnerContainer>

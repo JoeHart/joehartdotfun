@@ -6,11 +6,11 @@ module.exports = withImages();
 //     config.module.rules.push({
 //       test: /\.svg$/,
 //       issuer: {
-//         test: /\.(js|ts)x?$/
+//         test: /\.(js|ts)x?$/,
 //       },
-//       use: ["@svgr/webpack"]
+//       use: ["@svgr/webpack"],
 //     });
 
 //     return config;
-//   }
+//   },
 // };

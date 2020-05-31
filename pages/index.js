@@ -2,12 +2,13 @@ import Head from "next/head";
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import Card from "../components/Card";
-import Katamari from "../assets/Katamari.png";
-import TwitterLogo from "../assets/twitter.png";
-import SMS from "../assets/supermarketsolid.png";
-import DurhamDrive from "../assets/DurhamDrivesquare.png";
+import Katamari from "../assets/compressed/Katamari.png";
+import TwitterLogo from "../assets/compressed/twitter.png";
+import SMS from "../assets/compressed/supermarketsolid.png";
+import DurhamDrive from "../assets/compressed/DurhamDrivesquare.png";
 import Footer from "../components/Footer";
 import EmailSignUp from "../components/EmailSignUp";
+
 const GlobalStyle = createGlobalStyle`
   html, 
     body {
@@ -15,10 +16,20 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: Helvetica, sans-serif;
     }
+    body, #__next, .container{
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
 
     * {
     box-sizing: border-box;
     }
+
+
 `;
 
 const PageContainer = styled.div`

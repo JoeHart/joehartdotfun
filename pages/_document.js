@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from "next/document";
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from "styled-components";
-import Me from "../assets/me.jpg";
+
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     // Step 1: Create an instance of ServerStyleSheet
@@ -26,6 +26,10 @@ export default class MyDocument extends Document {
           {this.props.styleTags}
 
           <meta property="og:title" content="joehartdotfun - Silly Games" />
+          <meta
+            name="description"
+            content="Funny, silly or satirical comedy games made by comedian and coder Joe Hart"
+          />
           <meta
             property="og:description"
             content="Funny, silly or satirical comedy games made by comedian and coder Joe Hart"
