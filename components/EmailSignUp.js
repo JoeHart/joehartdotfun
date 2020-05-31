@@ -76,7 +76,7 @@ export default function EmailSignUp() {
       <h3>Sign up for an email when I release a new game.</h3>
       <StyledForm action={url} method="post" target="_blank">
         <VisuallyHidden>
-          <label for="EMAIL">Email</label>
+          <label for="email">Email</label>
         </VisuallyHidden>
         <InputContainer>
           <Input
