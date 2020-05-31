@@ -57,7 +57,6 @@ export default class MyDocument extends Document {
             data-bg="rgba(0,0,0,0.8)"
             data-accept-on-scroll="true"
             data-close-text="Dismiss"
-            data-debug="true"
             data-moreinfo="/cookieinfo"
             data-message="I use cookies to see which games are played most to try and make them better. I assume you're cool with that if you're hanging about."
             src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
