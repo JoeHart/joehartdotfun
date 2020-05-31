@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Item from "../components/Item";
-import Me from "../assets/compressed/me.jpg";
+import Me from "../assets/compressed/me-tiny.jpg";
 
 const Container = styled.footer`
   min-height: 15em;
