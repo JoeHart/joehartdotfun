@@ -1,8 +1,11 @@
 import React from "react";
 import Input from "./Input";
 import styled from "styled-components";
+import VisuallyHidden from "./VisuallyHidden";
+
 const url =
   "https://fun.us18.list-manage.com/subscribe/post?u=48db0395ef9f244b4dda52e1e&amp;id=3945ea8f6f";
+
 const Button = styled.button`
   display: block;
   background: rgb(0, 113, 227);
@@ -24,6 +27,7 @@ const Button = styled.button`
     background: rgb(0, 100, 200);
   }
 `;
+
 const Container = styled.div`
   grid-column: 1 / 4;
   text-align: center;
@@ -36,6 +40,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
 `;
+
 const StyledForm = styled.form`
   display: flex;
   flex-direction: row;
@@ -65,21 +70,14 @@ const InputContainer = styled.div`
   flex-grow: 1;
 `;
 
-const submitForm = async (email) => {
-  const result = await fetch(url, {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    bdy: JSON.stringify({
-      EMAIL: email,
-      b_48db0395ef9f244b4dda52e1e_3945ea8f6f: "",
-    }), // body data type must match "Content-Type" header
-  });
-};
-
 export default function EmailSignUp() {
   return (
     <Container>
       <h3>Sign up for an email when I release a new game.</h3>
       <StyledForm action={url} method="post" target="_blank">
+        <VisuallyHidden>
+          <label for="EMAIL">Email</label>
+        </VisuallyHidden>
         <InputContainer>
           <Input
             id="email"
