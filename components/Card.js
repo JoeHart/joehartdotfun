@@ -27,12 +27,13 @@ const ButtonLink = styled.a`
 
 const Image = styled.img`
   width: 100%;
+  position: absolute;
+  top: 0;
 `;
 const ImageWrapper = styled.div`
   width: 100%;
   position: relative;
   &:before {
-    position: absolute;
     content: "";
     display: block;
     width: 100%;
