@@ -42,7 +42,7 @@ export default function Card({
 }) {
   return (
     <Container>
-      <Image src={image} />
+      <Image src={image} alt="" />
       <Title>{title}</Title>
       <div>{children}</div>
       <ButtonLink href={link}>{buttonText}</ButtonLink>
