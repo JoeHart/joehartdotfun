@@ -59,6 +59,12 @@ const TwitterLink = styled.img`
   width: 2em;
 `;
 
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
+
 const Home = () => (
   <div className="container">
     <Head>
