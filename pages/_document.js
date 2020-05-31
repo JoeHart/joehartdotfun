@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lange="en">
+      <html lang="en">
         <Head>
           {this.props.styleTags}
 
