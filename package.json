@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "compress-assets": "imagemin ./assets/* --out-dir ./assets/compressed"
   },
@@ -15,7 +15,6 @@
     "next-ga": "^2.3.4",
     "next-images": "^1.4.0",
     "react": "16.13.1",
-    "react-aspect-ratio": "^1.0.42",
     "react-dom": "16.13.1",
     "styled-components": "^5.1.0"
   },
