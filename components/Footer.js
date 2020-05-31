@@ -73,6 +73,12 @@ export default function Footer() {
                 <a href="https://twitter.com/joehart">Twitter</a>
               </li>
               <li>
+                <a href="https://github.com/JoeHart">GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/joehart42/">Instagram</a>
+              </li>
+              <li>
                 <a href="https://joehart.dev">Blog</a>
               </li>
               <li>
