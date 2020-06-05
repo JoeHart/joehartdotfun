@@ -97,7 +97,7 @@ const Home = () => (
           <Card
             title="Super Market Solid"
             image={SMS}
-            link="/play/supermarketsolid/index.html"
+            link="/play/supermarketsolid/"
           >
             <p>
               It's time to go to the shops, can you get the items, get to the
@@ -107,7 +107,7 @@ const Home = () => (
           <Card
             title="Katamari Node Modules"
             image={Katamari}
-            link="/play/katamari/index.html"
+            link="/play/katamari/"
           >
             <p>
               Fulfill your destiny as a node_modules folder and grow as big as
