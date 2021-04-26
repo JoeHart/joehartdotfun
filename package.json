@@ -14,6 +14,7 @@
     "next": "9.3.4",
     "next-ga": "^2.3.4",
     "next-images": "^1.4.0",
+    "next-plausible": "^1.6.1",
     "react": "16.13.1",
     "react-cookie-banner": "^4.1.0",
     "react-dom": "16.13.1",
