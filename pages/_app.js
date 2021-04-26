@@ -3,7 +3,7 @@ import withGA from "next-ga";
 import PlausibleProvider from "next-plausible";
 function MyApp({ Component, pageProps }) {
   return (
-    <PlausibleProvider domain="joehart.fun">
+    <PlausibleProvider domain="joehart.fun" trackOutboundLinks={true}>
       <Component {...pageProps} />
     </PlausibleProvider>
   );
