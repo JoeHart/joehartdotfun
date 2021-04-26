@@ -90,7 +90,9 @@ const Home = () => {
               image={DurhamDrive}
               buttonText="Play On Itch.io"
               onClick={() => {
+                console.log("onclick");
                 plausible("playDurhamDrive");
+                return true;
               }}
               link="https://joehartfun.itch.io/durham-drive"
             >
