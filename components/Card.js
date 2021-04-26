@@ -49,6 +49,7 @@ export default function Card({
   link,
   image,
   children,
+  onClick,
   buttonText = "Play",
 }) {
   return (
@@ -58,7 +59,9 @@ export default function Card({
       </ImageWrapper>
       <Title>{title}</Title>
       <div>{children}</div>
-      <ButtonLink href={link}>{buttonText}</ButtonLink>
+      <ButtonLink onClick={onClick} href={link}>
+        {buttonText}
+      </ButtonLink>
     </Container>
   );
 }
