@@ -69,6 +69,7 @@ export default function Footer() {
           <div>
             <h3>Links</h3>
             <LinkList>
+            <li><a href="https://social.lol/@joehart">Mastodon</a></li>
               <li>
                 <a href="https://twitter.com/joehart">Twitter</a>
               </li>
